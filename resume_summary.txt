@@ -1,0 +1,15 @@
+Face Crop AI - Batch Image Processing & AI Detection Web App
+
+[Project Description]
+Developed a high-performance, client-side web application designed to automate batch face detection, cropping, and intelligent image compression. Built with privacy and speed in mind, the application processes hundreds of photos entirely on-device, eliminating server costs and ensuring zero user data is ever uploaded to the cloud.
+
+[Technologies Used]
+React, Tailwind CSS, Vite, face-api.js (TensorFlow.js), JSZip, HTML5 Canvas API, File System Access API.
+
+[Key Features & Technical Achievements]
+- On-Device AI Processing: Integrated face-api.js and TensorFlow.js models directly into the browser to detect facial landmarks and dynamically crop images locally.
+- Advanced Batch Handling: Engineered a robust drag-and-drop file system utilizing the File System Access API (webkitGetAsEntry) to recursively scan and process entire directories.
+- Smart Image Compression: Built a custom iterative binary-search compression algorithm using the HTML5 Canvas API to strictly enforce target file sizes (e.g., max 50KB) while maintaining optimal visual quality.
+- Interactive Image Analysis: Developed an intuitive "Before & After" comparison modal that allows users to instantly view original vs. processed images side-by-side with real-time size reduction statistics.
+- Premium UI/UX Engineering: Designed a highly responsive, modern SaaS dashboard featuring glassmorphism aesthetics, state-driven dark mode, custom animated components, and real-time processing ETA calculations.
+- Client-Side Archiving: Implemented JSZip to dynamically package hundreds of processed images into a single downloadable ZIP archive directly in the browser's memory.

@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-grad-1: #f8fafc;
+    --bg-grad-2: #e2e8f0;
+    --bg-grad-3: #f1f5f9;
+    --bg-grad-4: #f8fafc;
+    --panel-bg: rgba(255, 255, 255, 0.95);
+    --panel-border: rgba(255, 255, 255, 0.4);
+    --text-main: #1e293b;
+    --text-muted: #64748b;
+    --glass-bg: rgba(255, 255, 255, 0.5);
+    --glass-bg-hover: rgba(255, 255, 255, 0.8);
+    --glass-border: rgba(0, 0, 0, 0.05);
+    --glass-border-hover: rgba(0, 0, 0, 0.2);
+    --card-bg: #ffffff;
+  }
+
+  .dark {
+    --bg-grad-1: #0f172a;
+    --bg-grad-2: #1e293b;
+    --bg-grad-3: #0f172a;
+    --bg-grad-4: #020617;
+    --panel-bg: rgba(30, 41, 59, 0.75);
+    --panel-border: rgba(255, 255, 255, 0.1);
+    --text-main: #f8fafc;
+    --text-muted: #94a3b8;
+    --glass-bg: rgba(15, 23, 42, 0.6);
+    --glass-bg-hover: rgba(30, 41, 59, 0.9);
+    --glass-border: rgba(255, 255, 255, 0.05);
+    --glass-border-hover: rgba(255, 255, 255, 0.15);
+    --card-bg: #1e293b;
+  }
+
+  body {
+    @apply font-sans text-text-main m-0 p-0 transition-colors duration-500;
+    background: linear-gradient(-45deg, var(--bg-grad-1), var(--bg-grad-2), var(--bg-grad-3), var(--bg-grad-4));
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+  }
+}
